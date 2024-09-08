@@ -1,0 +1,27 @@
+<!-- <p [id]="propLegal">product-create works!</p> -->
+<!-- <button (click)="fazerAlgo()">Fazer Algo!</button> -->
+
+<!-- <button mat-raided-button (click)="createProduct()" color="primary">
+    Novo Produto
+</button>
+<br>
+<button mat-raided-button (click)="cancel()">
+    Cancelar
+</button> -->
+
+<mat-card>
+
+    <mat-card-title>Novo Produto</mat-card-title>
+    <form action="">
+        <mat-form-field>
+            <input matInput placeholder="Nome" [(ngModel)]="product.name" [ngModelOptions]="{standalone: true}">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Preço (R$)" [(ngModel)]="product.price" [ngModelOptions]="{standalone: true}">
+        </mat-form-field>
+    </form>
+
+</mat-card>
+<br>
+<button mat-raised-button (click)="createProduct()" color="primary">Salvar</button>
+<button mat-raised-button (click)="cancel()">Cancelar</button>
